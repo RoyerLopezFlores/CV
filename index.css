@@ -1,0 +1,271 @@
+*{
+    padding: 0;
+    margin: 0;
+    --name-size: large;
+    --title-size: medium;
+    --subtitle-size: small;
+    --content-size: x-small;
+    --color-orange: rgb(242, 191, 80);
+    --color-gray:rgb(225, 225, 225);
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+#ctn-hoja{
+    background-color: white;
+    font-size: small;
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    padding: 2% 2%;
+    box-shadow: 0px 0px 15px #000000;
+}
+#ctn-profile{
+    background-color: var(--color-orange);
+    display: flex;
+    flex-direction: column;    
+}
+#presentacion{
+    background-color: black;
+    width: 100%;
+    padding: 15px 10px;
+}
+.img-foto-carrer>img{
+    max-width: 100%;
+    height: auto;
+    filter: grayscale(200%);
+
+}
+.img-foto-carrer{
+    position: relative;
+    width: 90%;
+    display: block;
+    margin-bottom: 15px;
+    display: flex;
+    justify-content: center;
+
+}
+.ctn-yellow{
+    background-color: var(--color-orange);
+    padding: 2px 5px;
+    font-size: small;
+    font-weight: bold;
+}
+.ctn-center{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0px;
+    position: absolute;
+    bottom: 0px;
+}
+.subtitle-prolife{
+    color:white
+}
+.contenido-prolife{
+    color: white;
+    text-align: center;
+    font-size: x-small;
+    
+}
+.ctn-descrip-education{
+    padding-right: 10px;
+    text-align: center;
+}
+#cualidades{
+    background-color: var(--color-gray);
+    flex-grow: 1;
+    padding: 2px 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+#ctn-descripcion{
+    display: flex;
+    flex-direction: column;
+
+}
+#generalidades{
+    background-color:var(--color-gray);
+    width: 100%;
+
+    padding: 10px 0;
+    padding-left: 5px;
+}
+#experiencia{
+    flex-grow: 1;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 5px;
+}
+#ctn-skill{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    
+    align-items: center;
+    row-gap: 2px;
+}
+.barra-skill{
+    width: 100%;
+    height: 5px;
+    background-color: rgb(110, 110, 110);
+    position: relative;
+    border-radius: 2px;
+}
+/*
+.barra-skill::before{
+    content: "";
+    display: inline-block;
+    height: 100%;
+    width: 0%;
+    background-color: yellow;
+    position: absolute;
+    transition: width .5s ease-in .1s;
+}*/
+.porcentaje-barra-skill{
+    width: 10%;
+    background-color: var(--color-orange);
+    height: 100%;
+    position: absolute;
+    border-radius: 2px;
+    transition: width .5s ease-in .1s;
+}
+.nombre-skill{
+    font-size: x-small;
+    font-weight: bold;
+}
+#ctn-detalles-contacto{
+    
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    align-items: center;
+}
+.icon-contact{
+    background-color: var(--color-orange);
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2px;
+}
+#ctn-certificados{
+    display: grid;
+    grid-template-columns: 60px 1fr;
+    row-gap: 5px;
+    padding-top: 5px;
+}
+#ctn-intereses{
+    display: flex;
+    justify-content:space-around;
+
+}
+.icon-interes{
+    font-size: medium;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 5px;
+}
+.name-interes{
+    font-size: x-small;
+    text-align: center;
+}
+.ctn-directorio{
+    display: grid;
+    grid-template-columns: 100px 1fr;
+}
+.super-titulo{
+    font-size: x-large;
+}
+.titulo-bloque{
+    font-size:small;
+    font-weight: bold;
+    position: relative;
+    margin-bottom: 8px;
+}
+.titulo-bloque::before{
+    content: "";
+    display: inline-block;
+    width: 8%;
+    position: absolute;
+    height: 5px;
+    background-color: var(--color-orange);
+    bottom: -5px;
+}    
+.nombre-certificado{
+    font-size: x-small;
+}
+.empresa-certificado{
+    font-size: small;
+    font-weight: bold;
+}
+.ctn-exp-descripcion{
+    font-size: x-small;
+}
+.ctn-exp-fecha{
+    font-size: small;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+.ctn-exp-fecha>p{
+    display: inline-block;
+    background-color: var(--color-orange);
+    padding: 1px 3px;
+    border-radius: 2px;
+}
+.ctn-exp-nombre{
+    font-size: small;
+    font-weight: bold;
+}
+.descripcion-prolife{
+    font-size: x-small;
+    font-style: italic;
+    padding: 0 5px;
+}
+#ctn-personalidad{
+    display: flex;
+    justify-content: space-around;
+
+}
+#personalidad{
+    margin: 5px 1px;
+}
+.prolife-personalidad{
+    font-size: x-small;
+    font-weight: bold;
+    border-radius: 2px;
+    border-left: 1px solid black;
+    box-shadow: 1px 0 0 0 black;
+    padding: 1px;
+}
+.ctn-contact-nombre{
+    font-size: small;
+
+}
+.ctn-contact-descripcion{
+    font-size: small;
+    font-weight: bold;
+    padding-bottom: 2px;
+
+}
+.white-div{
+    color: white;
+}
+.ctn-carrera{
+
+}
+.ctn-desp-carrera{
+    display: inline-block;
+    padding: 2px;
+    background-color: var(--color-orange);
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: small;
+    margin-bottom: 5px;
+}
