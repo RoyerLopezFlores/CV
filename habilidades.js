@@ -14,7 +14,6 @@ class HtmlHabilidad{
     }
     actualizarDivPorcentaje(){
         this.htmlPorcentaje.style.width = `${this.habilidad.porcentaje}%`;
-        console.log(this.htmlPorcentaje);
     }
     getHtml(){
         const nombre = document.createElement("div");
@@ -49,4 +48,3 @@ htmlHabilidades.forEach((hab)=>{
 htmlHabilidades.forEach((hab)=>{
     hab.actualizarDivPorcentaje();
 });
-console.log(infHabilidades,htmlHabilidades);

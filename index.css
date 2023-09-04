@@ -8,19 +8,50 @@
     --color-orange: rgb(242, 191, 80);
     --color-gray:rgb(225, 225, 225);
 }
+/*
 body{
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
+}*/
+body{
+    overflow-y: hidden;
 }
-#ctn-hoja{
+.ctn-all{
+    width: 100vw;
+    height: 100vh;
+    scroll-snap-type: y mandatory;
+    overflow-x: hidden;
+    overflow-y:scroll;
+}
+.ctn-all>section{
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+}
+
+.section-total{
+    width: 98vw;
+    height: 100vh;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+
+}
+.type-A4{
     background-color: white;
     font-size: small;
-    display: grid;
-    grid-template-columns: 35% 1fr;
     padding: 2% 2%;
     box-shadow: 0px 0px 15px #000000;
+}
+#ctn-hoja{
+    
+    display: grid;
+    grid-template-columns: 35% 1fr;
+    
 }
 #ctn-profile{
     background-color: var(--color-orange);

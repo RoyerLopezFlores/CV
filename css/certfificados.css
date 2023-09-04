@@ -1,0 +1,18 @@
+.ctn-certificados-all-item{
+    width: 100%;
+    display: grid;
+    grid-template-columns: min(200px,20%) 1fr;
+
+}
+.ctn-topico-certificado{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.ctn-topico-certificado>div{
+    width: 20%;
+}
+.grande-letra{
+    font-size: 1.5em;
+}
