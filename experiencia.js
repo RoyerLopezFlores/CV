@@ -33,7 +33,7 @@ class HtmlExperiencia{
 const infExperiencia = [
     new Experiencia({nombre:"Desarrollador ", compania:"Lab. SmartCity/UNI",
                     fecha:"2022-Presente", 
-                    descripcion:"Se realizaron distintos trabajos como creación de dashboard(Fronted), creación de gauges para el monitoreo en tiempo real(Fronted), creación de API(Node js), creación de interfaz gráficas(Python), etc"})
+                    descripcion:"Se realizaron distintos trabajos como creación de dashboard(Fronted), creación de gauges para el monitoreo en tiempo real(Fronted), creación de API(Node js), creación de interfaz gráficas(Python), desarrollo de IA de reconocimiento facial, etc"})
 ]
 const htmlExperiencias = infExperiencia.map((exp)=>{
     return new HtmlExperiencia({experiencia:exp});
